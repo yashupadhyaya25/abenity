@@ -1,0 +1,8 @@
+# version '1.0'
+services:
+  abenity :
+    container_name: abenity
+    image: abenity
+    build : .
+    ports : 
+      - "8081:8081"
