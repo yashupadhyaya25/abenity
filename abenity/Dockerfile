@@ -19,7 +19,6 @@ RUN unzip chromedriver-linux64.zip
 RUN mkdir -p /member_export
 RUN chmod -R 777 /member_export
 
-ADD ./export_members.py .
 ADD ./abenity.py .
 ADD ./main.py .
 RUN pip install flask
