@@ -34,7 +34,6 @@ class Abenity:
         options.add_argument("--headless")
         # Set up the Chrome WebDriver with the specified options
         service = Service(executable_path='./chromedriver-linux64/chromedriver')
-        # service = Service(executable_path=r'G:\My Drive\0PI_PROJECTS\Yuya Omari\Abenity - Automation\chromedriver\chromedriver.exe')
         driver = webdriver.Chrome(options=options,service=service)
         return driver
 
